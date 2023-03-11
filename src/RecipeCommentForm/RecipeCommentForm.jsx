@@ -44,22 +44,27 @@ const RecipeCommentForm = ({ onCommentSubmit }) => {
   return (
     <Box sx={{ mb: 2 }}>
       <form onSubmit={handleSubmit}>
-        <Rating
-          name="rating"
-          value={rating}
-          precision={1}
-          onChange={handleRatingChange}
-          emptyIcon={<StarIcon style={{ opacity: 0.55 }} />}
-        />
-        <TextField
-          id="comment"
-          label="Comment (optional)"
-          multiline
-          rows={4}
-          value={comment}
-          onChange={handleCommentChange}
-          fullWidth
-        />
+        <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
+          {/* <StarIcon sx={{ mr: 1 }} /> */}
+          <Rating
+            name="rating"
+            value={rating}
+            precision={1}
+            onChange={handleRatingChange}
+            emptyIcon={<StarIcon style={{ opacity: 0.55 }} />}
+          />
+        </Box>
+        <Box sx={{ mt: 2, width: '50%' }}>
+          <TextField
+            id="comment"
+            label="Comment (optional)"
+            multiline
+            rows={4}
+            value={comment}
+            onChange={handleCommentChange}
+            fullWidth
+          />
+        </Box>
         <Box sx={{ mt: 2 }}>
           <Button type="submit" variant="contained" color="primary">
             Post Comment
