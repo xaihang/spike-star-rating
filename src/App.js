@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="app-container">
       <h1>Star Rating</h1>
       <RecipeCommentForm onCommentSubmit={handleCommentSubmit} />
       <RecipeCommentList comments={comments} />

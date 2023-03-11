@@ -45,7 +45,6 @@ const RecipeCommentForm = ({ onCommentSubmit }) => {
     <Box sx={{ mb: 2 }}>
       <form onSubmit={handleSubmit}>
         <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
-          {/* <StarIcon sx={{ mr: 1 }} /> */}
           <Rating
             name="rating"
             value={rating}
