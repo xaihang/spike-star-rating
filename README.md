@@ -9,11 +9,12 @@ This Spike focuses on implementing a comment form with 5 stars rating system for
 1. [Approach](#approach)
 1. [Star icons functionality](#star-icons-functionality)
 1. [Success Alert](#success-alert)
+1. [Displaying Comments and Rating](#displaying-comments-and-rating)
 1. [Conclusion](#conclusion)
 
 ---
 ## Demo:
-
+![demo](./public/demo.gif)
 ---
 ## Approach:
 The following approach was used to implement the rating system in the Comment Form component:

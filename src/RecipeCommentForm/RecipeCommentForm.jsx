@@ -6,6 +6,7 @@ import {
   TextField,
   Snackbar,
   Alert,
+  Typography,
 } from "@mui/material";
 import StarIcon from '@mui/icons-material/Star';
 
@@ -45,6 +46,9 @@ const RecipeCommentForm = ({ onCommentSubmit }) => {
     <Box sx={{ mb: 2 }}>
       <form onSubmit={handleSubmit}>
         <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
+        <Typography sx={{mr: 2}} fontWeight="bold">
+    Made it? Leave a review!
+  </Typography>
           <Rating
             name="rating"
             value={rating}
