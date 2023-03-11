@@ -46,7 +46,7 @@ import StarIcon from '@mui/icons-material/Star';
 ```
 
 ---
-## Success Alert
+## Success Alert:
 
 This function creates a new comment object with the current rating and comment values and sends it to the parent component via the onCommentSubmit prop. It also clears the form and sets the submitSuccess state to true, which triggers the Snackbar component to display a success alert.
 
